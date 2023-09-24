@@ -93,7 +93,7 @@ body {
 /* Style for the image */
 .modal-content img {
   height: 50%; /* Set the image height to 50% of its original height */
-  width: auto; /* Maintain the aspect ratio */
+  max-width: 100%; /* Maintain the aspect ratio */
   display: block;
   margin: 0 auto;
   border: 4px solid #fff;
