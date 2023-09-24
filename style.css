@@ -471,6 +471,7 @@ body {
 @media (max-width: 480px) {
   .card {
     width: 90%; /* Adjust card width for smaller mobile screens */
+    overflow: auto;
   }
 
   .card-front__heading {
