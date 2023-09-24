@@ -518,40 +518,48 @@
       </div>
     </footer>
     <script>
-        // Get the modal element
-        var modal = document.getElementById("myModal");
-        var modal = document.getElementById("myModal1");
+// Get the modal elements
+var modal = document.getElementById("myModal");
+var modal1 = document.getElementById("myModal1");
 
-        // When the user clicks a link, display the modal
-        // This is just an example, you can trigger this with your existing link click event
-        var openModalLink = document.getElementById('openModal');
-        openModalLink.onclick = function () {
-            modal.style.display = "block";
-        }
+// When the user clicks a link to open the first modal
+var openModalLink = document.getElementById('openModal');
+openModalLink.onclick = function () {
+    modal.style.display = "block";
+}
 
-        var openModalLink = document.getElementById('openModal1');
-        openModalLink.onclick = function () {
-            modal.style.display = "block";
-        }
+// When the user clicks a link to open the second modal
+var openModalLink1 = document.getElementById('openModal1');
+openModalLink1.onclick = function () {
+    modal1.style.display = "block";
+}
 
-        // When the user clicks the close button, hide the modal
-        var closeBtn = document.getElementsByClassName("close")[0];
-        closeBtn.onclick = function () {
-            modal.style.display = "none";
-        }
+// When the user clicks the close button for the first modal
+var closeBtn = document.getElementsByClassName("close")[0];
+closeBtn.onclick = function () {
+    modal.style.display = "none";
+}
 
-          // When the user clicks the close button, hide the modal
-          var closeBtn = document.getElementsByClassName("close1")[0];
-        closeBtn.onclick = function () {
-            modal.style.display = "none";
-        }
+// When the user clicks the close button for the second modal
+var closeBtn1 = document.getElementsByClassName("close1")[0];
+closeBtn1.onclick = function () {
+    modal1.style.display = "none";
+}
 
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
+// When the user clicks anywhere outside of the first modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// When the user clicks anywhere outside of the second modal, close it
+window.onclick = function (event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+}
+
 
       function showDropdown(element) {
         var dropdownMenu = element.querySelector(".dropdown-menu");
